@@ -7,7 +7,7 @@
 	delaycompress
 	compress
 	postrotate
-		/usr/lib/rsyslog/rsyslog-rotate
+		/usr/bin/supervisorctl restart rsyslog
 	endscript
 }
 
@@ -21,6 +21,6 @@
 	delaycompress
 	sharedscripts
 	postrotate
-		/usr/lib/rsyslog/rsyslog-rotate
+		/usr/bin/supervisorctl restart rsyslog
 	endscript
 }
