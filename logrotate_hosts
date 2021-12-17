@@ -14,6 +14,7 @@
 /var/log/hosts/*.log
 {
 	rotate 4
+	maxsize 50M
 	weekly
 	missingok
 	notifempty
